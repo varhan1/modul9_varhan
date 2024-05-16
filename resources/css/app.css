@@ -1,0 +1,42 @@
+.hexagon-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Sesuaikan sesuai kebutuhan */
+}
+
+.hexagon {
+    position: relative;
+    width: 100px;
+    height: 57.74px;
+    background-color: #007bff; /* Warna hexagon */
+    margin: 0 auto;
+    transform: translateY(29px);
+}
+
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    top: -29px;
+    border-bottom: 28.87px solid #007bff; /* Warna hexagon */
+}
+
+.hexagon:after {
+    bottom: -29px;
+    border-top: 28.87px solid #007bff; /* Warna hexagon */
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Warna teks */
+    font-size: 16px; /* Ukuran teks */
+    font-weight: bold; /* Ketebalan teks */
+}
